@@ -42,7 +42,7 @@ with tab1:
     x5 = st.slider('Cholesterol', 0, 700, 180)
 
     #'FastingBS'
-    x6 = st.selectbox('Select FastingBS',("0", "1"))
+    x6 = st.radio('Select FastingBS',("0", "1"))
 
     #'RestingECG'
     x7 = st.radio('Select RestingECG', RestingECG_encoder.classes_)
@@ -56,7 +56,7 @@ with tab1:
     x9 = ExerciseAngina_encoder.transform([x9])[0]
 
     #'Oldpeak'
-    x10 = st.slider('Oldpeak', 0.0, 7.0, -3.0)
+    x10 = st.slider('Oldpeak', 0.0, 7.0, -3.0,step="0.1")
 
     #'ST_Slope'
     x11 = st.radio('Select ST_Slope', ST_Slope_encoder.classes_)
