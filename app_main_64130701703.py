@@ -49,14 +49,14 @@ with tab1:
     x7 = RestingECG_encoder.transform([x7])[0]
 
     #'MaxHR'
-    x8 = st.slider('MaxHR', 0, 250, 50)
+    x8 = st.slider('MaxHR', 50, 250, 50)
 
     #'ExerciseAngina'
     x9 = st.radio('Select RestingECG', ExerciseAngina_encoder.classes_)
     x9 = ExerciseAngina_encoder.transform([x9])[0]
 
     #'Oldpeak'
-    x10 = st.slider('Oldpeak', 0, 7, -3)
+    x10 = st.slider('Oldpeak', 0.0, 7.0, -3.0)
 
     #'ST_Slope'
     x11 = st.radio('Select ST_Slope', ST_Slope_encoder.classes_)
