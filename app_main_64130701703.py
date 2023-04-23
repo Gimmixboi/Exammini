@@ -42,7 +42,7 @@ with tab1:
     x5 = st.slider('Cholesterol', 0, 700, 180)
 
     #'FastingBS'
-    x6 = st.radio('Select FastingBS', "0", "1")
+    x6 = st.selectbox('Select FastingBS',("0", "1"))
 
     #'RestingECG'
     x7 = st.radio('Select RestingECG', RestingECG_encoder.classes_)
